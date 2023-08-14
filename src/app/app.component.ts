@@ -26,4 +26,8 @@ export class AppComponent {
       new Tarefa("Ajudar meus pais", false)
     ];
   }
+
+  DELETE_tarefa(tarefaAserRemovida : Tarefa){
+    this.arrayDeTarefas.splice(this.arrayDeTarefas.indexOf(tarefaAserRemovida), 1);
+  }
 }
