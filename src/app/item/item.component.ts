@@ -9,4 +9,5 @@ export class ItemComponent {
  emEdicao = false;
  @Input() tarefa: Tarefa = new Tarefa("", false)
  @Output() removeTarefa = new EventEmitter();
+ @Output() modificaTarefa = new EventEmitter();
 }
